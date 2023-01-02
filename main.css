@@ -1,0 +1,287 @@
+:root{
+    --main-purple: #7146fd;
+    --white: #efeff1;
+    --yellow: #facc40;
+    --secondary-purple: #4817ee;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bg-area{
+    width: 100%;
+    padding: 0.01px;
+    height: 400px;
+    background-image: url('https://cdn.britannica.com/36/198336-050-A9B8AA86/Chadwick-Boseman-Tchalla-Black-Panther-Black.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info{
+    padding: 20px;
+    margin-top:  40%;
+}
+
+.reviews{
+    color: rgba(255, 255, 255, .3);
+    font-size: .7em;
+}
+
+.info h1, h2, h3, h4, h5, h6, p{
+    color: var(--white);
+}
+
+.purple-effect{
+    height: 100%;
+    background: linear-gradient(180deg, rgba(72, 23, 238, .3) 60%, black);
+}
+
+.default-effect{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(11, 6, 29, 0.3) 60%, black);
+}
+
+.top-menu{
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-icon img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.menu-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.menu-icon span{
+    height: 1px;
+    background: var(--white);
+    width: 15px;
+}
+
+.menu-icon span:nth-child(2){
+    position: relative;
+    left: 3px;
+}
+
+.play-button{
+    background: linear-gradient(60deg, var(--main-purple), var(--secondary-purple));
+    padding: 20px;
+    position: relative;
+    border-radius: 50%;
+    color: var(--white);
+    cursor: pointer;
+    box-shadow: 0 5px 16px 2px rgba(72, 23, 238, .3);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) .2s;
+}
+
+.play-button:hover{
+    box-shadow: 0 5px 16px 5px rgba(72, 23, 238, .7);
+}
+
+.right-area{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-title{
+    font-weight: 100;
+    font-size: 1.3rem;
+}
+
+.movie-section{
+    height: 100%;
+    background: black;
+}
+
+.score{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.score-number{
+    font-weight: 900;
+    color: var(--yellow);
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.stars span{
+    font-weight: 900;
+    color: var(--yellow);
+}
+
+.stars .not-active-star{
+    color: rgba(255, 255 ,255 , .3);
+}
+
+.categories{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    width: 75%;
+    margin-top: 15px;
+}
+
+.category{
+    border:rgba(255, 255 , 255, .5) 1px solid;
+    border-radius: 5px;
+    line-height: 0;
+    padding: 10px 15px;
+    font-size: .7em;
+    color: rgba(255, 255 , 255, .5);
+}
+
+.movies-section{
+    padding: 35px 20px;
+}
+
+.movies-section-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.movies-section-title h2 {
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.movies-section-title a {
+    color: rgba(255, 255, 255, .3);
+    font-size: .7rem;
+    text-decoration: none;
+}
+
+.movies-gallery{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+.movie{
+    cursor: pointer;
+}
+
+.movie img{
+    height: 200px;
+    border-radius: 2px;
+}
+
+/* Screen 2 */
+
+.screen:nth-child(2){
+    overflow-y: scroll;
+}
+
+.display{
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-d{
+    display: flex;
+    flex-direction: column;
+}
+
+.desc-img{
+    width: 75px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.banner-movie{
+    background-image: url('https://wallpapercave.com/wp/wp7312149.jpg');
+    background-position: center;
+    width: 100%;
+    height: 40%;
+    background-size: cover;
+    color: white;
+}
+
+.p-d{
+    padding: 0 20px 10px;
+}
+
+.p-20{
+    padding: 20px;
+}
+
+hr{
+    border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255,255,255, 0), rgba(255,255,255, 0.3), rgba(255,255,255, 0));
+}
+
+.info-movie{
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.info-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-details span{
+    color: rgba(255, 255, 255, 0.3);
+    font-size: .7em;
+}
+
+#desc-detail{
+    color: white;
+    font-size: 1em;
+}
+
+.storyline h2{
+    color: rgba(255, 255, 255, 0.3) !important;
+    font-weight: 100;
+    font-size: .7em;
+}
+
+.storyline p {
+    background: -webkit-linear-gradient(rgb(238, 238, 238), rgb(238, 238, 238, .5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: .9em;
+}

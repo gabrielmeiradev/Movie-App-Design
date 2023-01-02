@@ -1,0 +1,68 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(180deg, #050127, #000000);
+    overflow-y: hidden;
+}
+
+main{
+    display: flex;
+    height: 80vh;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.screen{
+    background: black;
+    width: 350px;
+    height: 100%;
+    overflow-y: scroll;
+    border-radius: 10px;
+    box-shadow: 2px 2px 16px 5px rgba(0, 0, 0, .02);
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: rgba(62, 56, 131, .8) black;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: black;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(62, 56, 131, .8);
+    border-radius: 4px;
+    border: 1px solid black;
+  }
+
+  @media screen and (max-width: 700px){
+      main{
+          flex-direction: column;
+      }
+
+      body{
+          overflow-y: auto;
+      }
+
+      .screen{
+        width: 350px;
+        height: 8000px;
+      }
+  }
